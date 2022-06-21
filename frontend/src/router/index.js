@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 import store from '@/store'
-
+import TotalSetting from '../components/ceo/TotalSetting.vue'
 
 
 
@@ -56,6 +56,23 @@ const routes = [
     name: 'RoomRegisterPage',
     component: () => import('../views/hotel/RoomRegisterPage.vue')
   },
+  {
+    path: '/calendar',
+    name: 'HotelCalendar',
+    component: () => import('../components/ceo/HotelCalendar.vue')
+  },
+  {
+    path: '/total',
+    name: 'TotalSetting',
+    components: {
+      default: TotalSetting
+    },
+    props: {
+      default: true
+    }
+  },
+
+
 
 
 ]
