@@ -121,7 +121,7 @@ export default {
             fileNum: 0,
             totalAddress:'',
             personnel: '',
-            writer: "admin@gmail.com"
+            writer: this.$store.state.user.email
         }
     },
     methods: {

@@ -125,7 +125,7 @@ export default {
             notImage: ['','','','','','','','',''],
             fileNum: 0,
             totalAddress:'',
-            writer: "admin@gmail.com"
+            writer: this.$store.state.user.email
 
         }
     },
