@@ -69,7 +69,12 @@ const routes = [
     name: 'TotalSetting',
     components: {
       default: TotalSetting
-
+    },
+    props: {
+      default: true
+    }
+  },
+  {
     path: '/hotelReadPage/:hotelNo',
     name: 'HotelReadPage',
     components: {
