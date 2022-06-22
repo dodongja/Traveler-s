@@ -131,7 +131,6 @@ export default {
             notImage: ['','','','','','','','',''],
             fileNum: 0,
             totalAddress:''
-
         }
     },
     methods: {

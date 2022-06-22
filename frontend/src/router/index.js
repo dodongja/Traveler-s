@@ -4,7 +4,9 @@ import HomeView from '../views/HomeView.vue'
 
 import store from '@/store'
 
+import TotalSetting from '../components/ceo/TotalSetting.vue'
 import HotelReadPage from '@/views/hotelDetail/HotelReadPage.vue'
+
 
 
 
@@ -57,6 +59,17 @@ const routes = [
     component: () => import('../views/hotel/RoomRegisterPage.vue')
   },
   {
+
+    path: '/calendar',
+    name: 'HotelCalendar',
+    component: () => import('../components/ceo/HotelCalendar.vue')
+  },
+  {
+    path: '/total',
+    name: 'TotalSetting',
+    components: {
+      default: TotalSetting
+
     path: '/hotelReadPage/:hotelNo',
     name: 'HotelReadPage',
     components: {
@@ -66,7 +79,6 @@ const routes = [
       default: true
     }
   },
-
 
 ]
 
