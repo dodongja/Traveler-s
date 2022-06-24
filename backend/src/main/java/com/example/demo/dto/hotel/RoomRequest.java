@@ -11,6 +11,7 @@ public class RoomRequest {
     List<String> roomInfo;
     int personnel;
     Long hotelNo;
+    String writer;
 
 
     public RoomRequest (String roomName ,String roomType ,int personnel ,Long hotelNo , List<String> roomInfo) {
@@ -19,5 +20,9 @@ public class RoomRequest {
         this.roomInfo = roomInfo;
         this.personnel = personnel;
         this.hotelNo = hotelNo;
+    }
+
+    public RoomRequest (String writer){
+        this.writer = writer;
     }
 }

@@ -35,8 +35,8 @@ public class CeoController {
     }
 
     @PostMapping("/roomTypeList")
-    public List<AvailableRoomResponse> roomTypeList (@RequestBody RoomRequest RoomRequest){
-        log.info("writer:"+RoomRequest);
-        return ceoService.findRoomType(RoomRequest.getWriter());
+    public List<AvailableRoomResponse> roomTypeList (@RequestBody RoomRequest roomRequest){
+        log.info("writer:"+roomRequest);
+        return ceoService.findRoomType(roomRequest.getWriter());
     }
 }

@@ -175,7 +175,7 @@ export default {
   created () {
     //writer로 
     const {writer} = this
-    axios.post('http://localhost:7777/hotelList', {writer} )
+    axios.post('http://localhost:7777/roomTypeList', {writer} )
     .then((res) =>{
         console.log(res.data)
        

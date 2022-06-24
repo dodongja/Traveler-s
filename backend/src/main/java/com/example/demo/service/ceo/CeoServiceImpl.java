@@ -56,7 +56,7 @@ public class CeoServiceImpl implements CeoService {
     @Override
     public List<AvailableRoomResponse> findRoomType(String writer){
         //writer로 호텔 구함
-        Optional<Hotel>roomType=hotelRepository.findByWriter(writer);
+        List<Hotel>roomType=hotelRepository.findByWriter(writer);
 
         Hotel hotel=roomType.get();
         log.info("hotelNo:"+hotel.getHotelNo());
